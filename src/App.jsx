@@ -1,10 +1,7 @@
 import React from 'react';
 import { User, Monitor, BarChart3, Tv, Zap } from 'lucide-react';
 
-// --- REUSABLE COMPONENTS (For Extendability) ---
-
 // 1. Stat Card Component
-// Use this for the top three numbers. Easy to add more later.
 const StatCard = ({ label, value, subtext, valueColor = "text-gray-900", labelColor = "text-gray-500" }) => (
   <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col justify-between h-full hover:shadow-md transition-shadow">
     <div>
@@ -16,7 +13,6 @@ const StatCard = ({ label, value, subtext, valueColor = "text-gray-900", labelCo
 );
 
 // 2. Metric Row Component
-// Use this for the list items in the "Audience Snapshot"
 const MetricRow = ({ label, value, highlight = false }) => (
   <div className="flex justify-between items-center py-3 border-b border-gray-50 last:border-0">
     <span className={`text-gray-600 ${highlight ? 'font-bold text-gray-800' : ''}`}>{label}</span>
@@ -25,7 +21,6 @@ const MetricRow = ({ label, value, highlight = false }) => (
 );
 
 // 3. Progress Bar Component
-// Use this for the "Platform Breakdown"
 const PlatformBar = ({ name, percentage, colorClass }) => (
   <div className="mb-6 last:mb-0">
     <div className="flex justify-between mb-2">
