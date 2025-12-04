@@ -1,16 +1,50 @@
-# React + Vite
+# ElementalTV Sales Research Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive dashboard implementation based on the ElementalTV Sales Research design. This project demonstrates modern frontend development practices, focusing on component reusability, scalability, and clean UI architecture.
 
-Currently, two official plugins are available:
+**Live Demo:** [(https://elemental-tv-dashboard.vercel.app/)]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+*   **Framework:** React 18 (via Vite)
+*   **Styling:** Tailwind CSS (v4)
+*   **Icons:** Lucide React
+*   **Deployment:** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+*   **Component-Driven Architecture:** The UI is broken down into reusable components (`StatCard`, `MetricRow`, `PlatformBar`) to ensure the codebase is **extendable** and easy to maintain.
+*   **Fully Responsive:** Built with a mobile-first approach using Tailwind's grid system. It adapts seamlessly from mobile screens to large desktop monitors.
+*   **Data Separation:** Data is separated from the UI logic, making it easy to integrate with a backend API in the future.
+*   **Modern Design:** Includes backdrop blurs, clean typography, and pixel-perfect spacing matching the provided mockups.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Run Locally
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/zaina-601/elemental-tv-dashboard.git
+    cd elemental-tv-dashboard
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser to localhost.
+
+## Project Structure
+
+src/
+├── assets/ # Images and static assets
+├── components/ # (Optional) Reusable UI components
+├── App.jsx # Main Dashboard Layout & Logic
+├── main.jsx # Entry point
+└── index.css # Tailwind imports
+
+---
