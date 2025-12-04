@@ -40,11 +40,11 @@ A responsive dashboard implementation based on the ElementalTV Sales Research de
 
 ## Project Structure
 
-src/
-├── assets/ # Images and static assets
-├── components/ # (Optional) Reusable UI components
-├── App.jsx # Main Dashboard Layout & Logic
-├── main.jsx # Entry point
-└── index.css # Tailwind imports
+    src/
+    ├── assets/ # Images and static assets
+    ├── components/ # (Optional) Reusable UI components
+    ├── App.jsx # Main Dashboard Layout & Logic
+    ├── main.jsx # Entry point
+    └── index.css # Tailwind imports
 
 ---
